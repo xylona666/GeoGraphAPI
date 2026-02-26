@@ -1,5 +1,8 @@
 # GeoGraphAPI pipeline
 Using C# and Azure to build a API which could response a shortest path from our current location to destination(input)
+## Example
+
+curl https://yourapp.azurewebsites.net/countries
 
 # Structure
 
@@ -33,6 +36,11 @@ Using C# and Azure to build a API which could response a shortest path from our 
 Deploy to Azure and provide an accessible URL
 
 
+*there will be a API structure graph  and BFS graph*
+
+
+
+<img width="348" height="448" alt="image" src="https://github.com/user-attachments/assets/fc75770e-d162-40cd-96eb-190b0c7880b5" />
 
 
 
