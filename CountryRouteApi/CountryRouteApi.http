@@ -1,0 +1,6 @@
+@CountryRouteApi_HostAddress = http://localhost:5287
+
+GET {{CountryRouteApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
