@@ -10,5 +10,15 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
   </ItemGroup>
 
+  <!-- Exclude the MyFirstAzureWebApp subfolder from this web API project.
+       It contains a separate Blazor/Razor components project with its own
+       top-level `Program.cs` and generated assembly attributes which were
+       causing build conflicts (duplicate assembly attributes and multiple
+       top-level statements). Tests and builds only need the API sources. -->
+  <ItemGroup>
+    <Compile Remove="MyFirstAzureWebApp\**\*.cs" />
+    <None Remove="MyFirstAzureWebApp\**\*" />
+  </ItemGroup>
+
 </Project>
 

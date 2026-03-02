@@ -83,7 +83,7 @@ namespace CountryRouteApi.Services
             return null;
         }
 
-        // 从 goal 沿着 previous 回溯到 start，再反转
+    
         private static List<string> BuildPath(Dictionary<string, string?> previous, string goal)
         {
             List<string> path = new List<string>();

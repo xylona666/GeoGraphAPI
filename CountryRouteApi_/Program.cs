@@ -8,7 +8,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer(); 
 builder.Services.AddOpenApi();
 
-// 使用接口注册，方便后续扩展与测试
 builder.Services.AddSingleton<IGraph, Graph>(); 
 builder.Services.AddSingleton<IRouteService, RouteService>(); 
 
@@ -17,7 +16,7 @@ var app = builder.Build();
 app.MapOpenApi();
 app.MapControllers();
 
-// 支持 GET /PAN 这种根路径访问形式，贴合题目示例
+
 app.MapGet("/{code}", (string code, IRouteService routeService) =>
 {
     if (string.IsNullOrWhiteSpace(code) || code.Trim().Length != 3)
