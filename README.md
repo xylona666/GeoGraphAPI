@@ -1,4 +1,4 @@
-# 🌍GeoGraphAPIA 
+# 🌍GeoGraphAPI
 A cloud-native REST API built with C# (.NET) and Azure App Service that computes the shortest path between countries using the BFS algorithm.
 ## Demo
 
